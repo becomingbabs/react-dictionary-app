@@ -22,7 +22,7 @@ export default function Dictionary() {
                 <div className="search-word">
                     <div>
                         <p>
-                            Quickly
+                            Quickly - {keyword}
                         </p>
                         <p>
                             \ 'kwik' - 'ly' \
@@ -46,7 +46,7 @@ export default function Dictionary() {
                     </div>
                 </div>
                 <div className="img-block">
-                    <img />
+                    
                 </div>
             </div>
             <div>
