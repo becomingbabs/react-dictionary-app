@@ -1,0 +1,18 @@
+
+.information-block {
+    display: flex;
+}
+
+.search-word {
+    display: flex; 
+    flex-direction: column;
+}
+
+p {
+    color: white; 
+    font-size: 25px; 
+}
+
+input {
+    font-size: 20px; 
+}
