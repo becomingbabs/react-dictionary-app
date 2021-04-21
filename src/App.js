@@ -5,7 +5,7 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <div class="container">
+      <div className="container">
         <header>
           <img src="https://afternoah.com/media/12440/size/category-sub-header" className="lingo-globe" alt="globe"></img>
           <h1>Lingo Look-up</h1>
