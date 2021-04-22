@@ -5,6 +5,7 @@
     height: 100%; 
     margin: 5% 15% 5% 15%; 
     padding: 15px 30px; 
+    color: white; 
 }
 
 header {
@@ -14,7 +15,6 @@ header {
 }
 
 h1 {
-    color: white; 
     font-size: 50px; 
 }
 

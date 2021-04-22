@@ -1,12 +1,16 @@
 import React, { useState } from "react"; 
 import './Dictionary.css';
 import axios from "axios"; 
+import Results from "./Results"; 
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState(""); 
+    let [results, setResults] = useState(null); 
 
     function handleResponse(response) {
         console.log(response.data[0]); 
+        setResults(response.data[0]); 
+
     }
 
     function search(event) {
@@ -26,37 +30,7 @@ export default function Dictionary() {
             <form onSubmit={search}>
                 <input type="search" autoFocus={true} placeholder="Search the Dictionary" onChange={handleKeywordChange} />
             </form>
-            <div className="information-block">
-                <div className="search-word">
-                    <div>
-                        <p>
-                            Quickly
-                        </p>
-                        <p>
-                            \ 'kwik' - 'ly' \
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Adverb
-                        </p>
-                        <p>
-                           - acting quick, or fast paced 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Synonyms
-                        </p>
-                        <p>
-                           - rapidly, fast, briskly 
-                        </p>
-                    </div>
-                </div>
-                <div className="img-block">
-                    
-                </div>
-            </div>
+            <Results results={results} />
             <div>
                 <p>
                     By Barbara Jandernoa
