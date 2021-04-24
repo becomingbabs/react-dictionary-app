@@ -11,7 +11,7 @@ function App() {
           <h1>Lingo Look-up</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="peace" />
         </main>
       </div>
     </div>
