@@ -59,7 +59,7 @@ export default function Dictionary(props) {
                         />
                     </form>
                     <div className="hint">
-                        suggested words: bowtie, fez, custard, wibbly, wobbly, exterminate...
+                        suggested words: silence, library, fez, wobbly, exterminate...
                     </div>
                 </section>
                 <Results results={results} />

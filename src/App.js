@@ -1,18 +1,15 @@
 import './App.css';
 import Dictionary from "./Dictionary"; 
-import React from "react"; 
+import React from "react";
+import tardis from "./tardis.png";  
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <header className="app-header">
-          <div>
-            <img src="tardis.png" className="tardis" alt="Tardis"/>
-          </div>
-          <div>
-            <h1>The Doctor's Dictionary</h1>
-          </div>
+            <img src={tardis} className="tardis" alt="tardis" />
+            <h1>TARDictionary</h1>
         </header>
         <main>
           <Dictionary defaultKeyword="doctor" />

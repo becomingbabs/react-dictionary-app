@@ -1,29 +1,25 @@
 .Phonetics {
-    margin: 20px 0;
-  }
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+  align-items: center;
+}
 
-  .Phonetics a {
-    border: 2px solid #00203C;
-    text-decoration: none;
-    padding: 3px 12px;
-    font-size: 22px;
-    font-weight: 400; 
-    letter-spacing: 2px; 
-    margin-right: 10px;
-    border-radius: 20px;
-    transition: all 150ms ease-in-out;
+.Phonetics audio {
+    border: solid #00203C;
+    text-align: left; 
+    margin: 0 15px 0 3px; 
+    border-radius: 25px;
+    max-height: 25px; 
+    max-width: 275px; 
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    color: #00203C; 
-  }
-  
-  .Phonetics a:hover {
-    background: #00203C;
-    color: white;
+    overflow: hidden; 
   }
   
   .Phonetics .text {
     opacity: 0.7;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 2px; 
+    margin: 0 20px 0 5px; 
   }
