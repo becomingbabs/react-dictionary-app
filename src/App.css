@@ -1,23 +1,41 @@
 .container {
-    text-align: center; 
-    background: url("book-background.jpg"); 
-    background-size: cover;
-    height: 100%; 
-    margin: 5% 15% 5% 15%; 
-    padding: 15px 30px; 
-    color: white; 
+    max-width: 960px;
+    margin: 0 auto;
+    color: #00203C; 
+    font-family: 'Karantina', cursive;
+    font-weight: 300; 
 }
 
-header {
-    display: flex; 
-    justify-content: center;
-    margin: 35px 0 60px 0; 
+.app-header {
+    margin: 30px 0;
+    text-align: center; 
 }
 
 h1 {
-    font-size: 50px; 
+    font-size: 85px; 
+    font-weight: 400;
+    letter-spacing: 1.5px; 
+    margin: 25px 0 0 0;  
 }
 
-.lingo-globe {
-    max-width: 15%; 
+.tardis {
+    max-width: 100%; 
 }
+
+a {
+    color: #253E9A;
+    text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+      color: #DDDDDD; 
+  }
+
+.app-footer {
+    text-align: center;
+    margin: 30px 0;
+    color: #00203C; 
+    font-size: 15px;
+    font-family: arial; 
+  }

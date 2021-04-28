@@ -24,7 +24,7 @@ export default function Dictionary(props) {
         axios.get(apiUrl).then(handleDictionaryResponse); 
 
         let pexelsApiKey = "563492ad6f91700001000001f65adbcb4681495ab80b8486ebf83c2d"; 
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`; 
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`; 
         let headers = { Authorization: `Bearer ${pexelsApiKey}` }; 
         axios.get(pexelsApiUrl, { headers: headers })
         .then(handlePexelsResponse); 
@@ -47,23 +47,23 @@ export default function Dictionary(props) {
     if (loaded) {
         return (
             <div className="Dictionary">
-                <h2>
-                    Which word do you want to look up? 
-                </h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="search" autoFocus={true} 
-                    placeholder="Search the Dictionary" 
-                    onChange={handleKeywordChange}
-                    defaultValue={props.defaultKeyword} 
-                    />
-                </form>
+                <section>
+                    <h2>
+                        Which word do you want to look up? 
+                    </h2>
+                    <form onSubmit={handleSubmit}>
+                        <input type="search" autoFocus={true} 
+                        placeholder="Search the Dictionary" 
+                        onChange={handleKeywordChange}
+                        defaultValue={props.defaultKeyword} 
+                        />
+                    </form>
+                    <div className="hint">
+                        suggested words: bowtie, fez, custard, wibbly, wobbly, exterminate...
+                    </div>
+                </section>
                 <Results results={results} />
                 <Photos photos={photos} /> 
-                <div className="footer">
-                    <p>
-                        By Barbara Jandernoa
-                    </p>
-                </div>
             </div>
         );
     } else {

@@ -6,13 +6,28 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header>
-          <img src="https://afternoah.com/media/12440/size/category-sub-header" className="lingo-globe" alt="globe"></img>
-          <h1>Lingo Look-up</h1>
+        <header className="app-header">
+          <div>
+            <img src="tardis.png" className="tardis" alt="Tardis"/>
+          </div>
+          <div>
+            <h1>The Doctor's Dictionary</h1>
+          </div>
         </header>
         <main>
           <Dictionary defaultKeyword="doctor" />
         </main>
+          <footer className="app-footer">
+            <a
+              href="https://github.com/becomingbabs/react-weather-app"
+              id="open-source-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <strong>Open source code</strong>{" "}
+            </a>
+            by Barbara <br/> 👩🏻‍💻 <br/>  Currently located in Santiago, Chile
+          </footer>
       </div>
     </div>
   );
