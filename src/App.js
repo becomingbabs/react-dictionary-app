@@ -16,7 +16,7 @@ function App() {
         </main>
           <footer className="app-footer">
             <a
-              href="https://github.com/becomingbabs/react-weather-app"
+              href="https://github.com/becomingbabs/react-dictionary-app"
               id="open-source-link"
               target="_blank"
               rel="noreferrer"
