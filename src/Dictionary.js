@@ -15,7 +15,8 @@ export default function Dictionary(props) {
     }
 
     function handlePexelsResponse(response) {
-        setPhotos(response.data.photos);  
+        setPhotos(response.data.photos);
+        setKeyword("");   
     }
 
     function search() {
@@ -55,6 +56,7 @@ export default function Dictionary(props) {
                         <input type="search" autoFocus={true} 
                         placeholder="Search the Dictionary" 
                         onChange={handleKeywordChange}
+                        value={keyword}
                         defaultValue={props.defaultKeyword} 
                         />
                     </form>
